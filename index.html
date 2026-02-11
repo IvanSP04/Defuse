@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Desactiva la Bomba</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+  <div class="title">💣 Desactiva la Bomba</div>
+  <p>Tienes 10 segundos para cortar el cable correcto</p>
+
+  <div class="timer" id="timer">10</div>
+
+  <div class="cables" id="cables">
+    <button class="cable red" onclick="cutCable(0)">Cable Rojo</button>
+    <button class="cable blue" onclick="cutCable(1)">Cable Azul</button>
+    <button class="cable green" onclick="cutCable(2)">Cable Verde</button>
+  </div>
+
+  <div class="result hidden" id="result"></div>
+  <button class="reset hidden" id="reset" onclick="startGame()">Reiniciar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
